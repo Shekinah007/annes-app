@@ -2,6 +2,7 @@
   /* max-width: 1280px; */
   /* margin: 0 auto; */
   /* text-align: center; */
+  font-size: 16px;
 }
 
 .read-the-docs {
@@ -20,7 +21,7 @@
 .quick-nav {
   z-index: 2;
   position: fixed;
-  left: 10px;
+  right: 10px;
   top: 50%;
   /* width: 30px; */
   /* height: 20px; */
@@ -49,12 +50,12 @@ header {
   /* gap: 10px; */
   position: relative;
   text-align: center;
-  /* background-image: url("./images/Anne.jpg"); */
+  background-image: url("./images/anne\ \(3\).png");
   background-size: cover;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: black;
+  /* background-color: black; */
 }
 
 
@@ -63,7 +64,7 @@ header img {
   z-index: 0;
   position: absolute;
   /* width: 400px; */
-  height: 100vh;
+  /* height: 100vh; */
   max-width: 100vw;
 }
 
@@ -92,7 +93,8 @@ header a {
   bottom: 50px;
   font-size: 30px;
   /* color: whitesmoke; */
-  color: black;
+  color: grey;
+  font-size: 20px;
 }
 
 .section {
@@ -110,6 +112,7 @@ header a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  color: rgb(108, 108, 108);
 
 }
 
@@ -118,7 +121,6 @@ header a {
 
 
 #about {
-  color: black;
   /* min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -141,7 +143,7 @@ header a {
 
 #also {
   background: black;
-  color: rgb(162, 162, 162);
+  color: rgb(143, 143, 143);
   /* gap: 30px; */
 }
 
@@ -153,9 +155,24 @@ header a {
 
 }
 
-.mission {
+.mission>div {
   text-align: left;
+  color: rgb(179, 179, 179);
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
 
+}
+
+.core {
+  /* background-color: red; */
+}
+
+.caps {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
 }
 
 .mission p {
@@ -164,11 +181,11 @@ header a {
   max-width: 80vw;
 }
 
-.mission div:first-child {
+/* .mission div:first-child {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
 .core li {
   list-style: none;
@@ -205,9 +222,12 @@ header a {
 .scroll-down {}
 
 
-@media screen and (max-width: 600px) {
-  /* styles for screens smaller than 600px */
+@media screen and (max-width: 800px) {
 
+  /* styles for screens smaller than 600px */
+  .mission>div {
+    flex-direction: column;
+  }
 }
 
 

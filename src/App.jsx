@@ -3,12 +3,37 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import "animate.css"
+import { PaystackButton } from "react-paystack"
 
 import headImage from './images/anne (3).png'
 import aboutImg from "./images/anne (3).png"
 import Menu from './components/Menu'
 
 function App() {
+
+  const publicKey = "sk_test_8abee90376a7b5b9b031380968dd97bdc169165a";
+  const amount = 10000 // Remember, set in kobo!;
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+
+
+  const componentProps = {
+    email,
+    amount,
+    metadata: {
+      name,
+      phone,
+    },
+    publicKey,
+    text: "Pay Now",
+    onSuccess: () =>
+      alert("Thanks for doing business with us! Come back soon!!"),
+    onClose: () => alert("Wait! You need this oil, don't go!!!!"),
+  }
+
+
+
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
@@ -18,14 +43,14 @@ function App() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("scroll-animation");
-          if (entry.target.classList.contains("image")) {
-            console.log("Image!!");
-            // console.log(entry.target);
-          }
-          else if (entry.target.classList.contains("text")) {
-            console.log("text!!");
-            // console.log(entry.target)
-          }
+          // if (entry.target.classList.contains("image")) {
+          //   // console.log("Image!!");
+          //   // console.log(entry.target);
+          // }
+          // else if (entry.target.classList.contains("text")) {
+          //   // console.log("text!!");
+          //   // console.log(entry.target)
+          // }
 
         } else {
           entry.target.classList.remove("scroll-animation");
@@ -112,48 +137,89 @@ function App() {
 
       </div >
 
-      <div id="mission" className="section mission">
-        <div className="animate text">
+      <div id="mission" className="section mission animate text">
+        {/* <div className="animate text"> */}
 
-          <div className="">
-            <p>
-              Mission:
-              To create proper awareness on the subject of depression, enlightenment for early detention, to effectively overcome these challenges via counseling, coaching, training and mentoring.
-            </p>
-          </div>
-          <div className="core">
-            <p>
-              Core Values:
-              <br />
-              {/* <ul> */}
-              <li>C. Compassion for persons with mental health challenges</li>
-              <li>A. Awareness On Early Detection</li>
-              <li>R. Resonate- With Your True Identity</li>
-              <li>E. Empathy- Identifying with Persons With Mental Health challenges</li>
-              <li>S. Safe Habour- creating the right environment for total wellness.</li>
-              {/* </ul> */}
-            </p>
-          </div>
-          <div className="objectives">
-            <p>
-              Objectives And Goals
-              <li>Adequate and appropriate enlightenment and orientation for persons with mental health challenges</li>
-              <li>Creating Awareness for early detention of mental illness</li>
-              <li>Advocating for accurate Diagnosis</li>
-              <li>Advocacy for accurate and efficient treatment</li>
-              <li>Providing Emotional Support for persons with mental health challenges</li>
-              •Enlightement on the spiritual side of depression
-              •To create the right environment for total wellness
-            </p>
-          </div>
-
+        <div className="">
+          <h3>Mission:</h3>
+          <hr />
+          {/* <br /> */}
+          <p>
+            To create proper awareness on the subject of depression, enlightenment for early detention, to effectively overcome these challenges via counseling, coaching, training and mentoring.
+          </p>
         </div>
-        {/* <img src={aboutImg} alt="" width="200px" className="animate image"></img> */}
 
+        <div className="core">
+          <h3>Core Values:</h3>
+          <hr />
+          {/* <br /> */}
+          <p>
+            {/* <ul> */}
+            <li><span className='caps'>C</span>. Compassion for persons with mental health challenges</li>
+            <li><span className='caps'>A</span>. Awareness On Early Detection</li>
+            <li><span className='caps'>R</span>. Resonate- With Your True Identity</li>
+            <li><span className='caps'>E</span>. Empathy- Identifying with Persons With Mental Health challenges</li>
+            <li><span className='caps'>S</span>. Safe Habour- creating the right environment for total wellness.</li>
+            {/* </ul> */}
+          </p>
+        </div>
+
+        <br />
+
+        <div className="objectives">
+          <h3>Objectives And Goals</h3>
+          <hr />
+          <br />
+          <p>
+            <li>Adequate and appropriate enlightenment and orientation for persons with mental health challenges</li>
+            <li>Creating Awareness for early detention of mental illness</li>
+            <li>Advocating for accurate Diagnosis</li>
+            <li>Advocacy for accurate and efficient treatment</li>
+            <li>Providing Emotional Support for persons with mental health challenges</li>
+            •Enlightement on the spiritual side of depression
+            •To create the right environment for total wellness
+          </p>
+        </div>
+
+        {/* </div> */}
+
+
+
+
+      </div>
+
+      <div className="checkout-form">
+        <div className="checkout-field">
+          <label>Name</label>
+          <input
+            type="text"
+            id="name"
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="checkout-field">
+          <label>Email</label>
+          <input
+            type="text"
+            id="email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="checkout-field">
+          <label>Phone</label>
+          <input
+            type="text"
+            id="phone"
+            onChange={(e) => setPhone(e.target.value)}
+          />
+        </div>
+        <PaystackButton className="paystack-button" {...componentProps} />
       </div>
 
     </>
   )
 }
+
+
 
 export default App
