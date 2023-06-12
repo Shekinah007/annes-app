@@ -43,7 +43,8 @@ function App() {
   return (
     <>
 
-      <button className='menu-btn' onClick={() => { setMenu(prevState => !prevState); }}>{menu ? "Close" : "Open"}</button>
+      <button className='menu-btn' onClick={() => { setMenu(prevState => !prevState); }}>{menu ? <i className="fa fa-2x fa-times"></i>
+        : <i className="fa fa-2x fa-bars"></i>}</button>
       <Menu menu={menu} />
       <div className="quick-nav">
         <a href="#header"></a>
