@@ -11,7 +11,7 @@ import Menu from './components/Menu'
 
 function App() {
 
-  const publicKey = "sk_test_8abee90376a7b5b9b031380968dd97bdc169165a";
+  const publicKey = "pk_test_eb2e4ea24c9ae7e77dc4055679e1e6ee94a2f8de";
   const amount = 10000 // Remember, set in kobo!;
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
