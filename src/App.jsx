@@ -41,7 +41,7 @@ function App() {
 
       <button className='menu-btn' onClick={() => { setMenu(prevState => !prevState); }}>{menu ? <i className="fa fa-2x fa-times"></i>
         : <i className="fa fa-2x fa-bars"></i>}</button>
-      <Menu menu={menu} handleMenu={setMenu} handleBook={buyBook} />
+      <Menu menu={menu} handleBook={buyBook} />
       <div className="quick-nav">
         <a href="#header"></a>
         <a href="#about"></a>

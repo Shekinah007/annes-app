@@ -277,6 +277,7 @@ footer {
   padding-inline: 30px;
   background-color: black;
   line-height: 65px;
+  height: 50vh;
 }
 
 footer p {
