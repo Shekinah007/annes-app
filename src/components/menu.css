@@ -1,6 +1,7 @@
 .menu,
 .menu * {
     box-sizing: border-box;
+    transition: 0.3s;
 }
 
 .menu {
@@ -24,11 +25,19 @@
     transition: 0.4s;
     /* opacity: 0.8; */
     overflow: hidden;
+    border-bottom: 1px solid white;
 }
 
-.menu a {
+.menu a,
+.menu button {
     color: white;
     font-size: 20px;
+    text-decoration: none;
+}
+
+.menu button:hover {
+    /* color: rgb(108, 108, 219); */
+    border-bottom: 2px solid rgb(98, 98, 206);
 }
 
 .open {

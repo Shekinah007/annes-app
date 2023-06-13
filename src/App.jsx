@@ -12,11 +12,12 @@ import Book from './components/Book'
 
 function App() {
 
-
-
-
+  function buyBook() {
+    setBookModal(prev => !prev);
+  }
 
   const [menu, setMenu] = useState(false);
+  const [bookModal, setBookModal] = useState(false);
 
   useEffect(() => {
     let the_classes = document.querySelectorAll(".animate");
@@ -25,15 +26,6 @@ function App() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("scroll-animation");
-          // if (entry.target.classList.contains("image")) {
-          //   // console.log("Image!!");
-          //   // console.log(entry.target);
-          // }
-          // else if (entry.target.classList.contains("text")) {
-          //   // console.log("text!!");
-          //   // console.log(entry.target)
-          // }
-
         } else {
           entry.target.classList.remove("scroll-animation");
         }
@@ -52,7 +44,7 @@ function App() {
 
       <button className='menu-btn' onClick={() => { setMenu(prevState => !prevState); }}>{menu ? <i className="fa fa-2x fa-times"></i>
         : <i className="fa fa-2x fa-bars"></i>}</button>
-      <Menu menu={menu} />
+      <Menu menu={menu} handleBook={buyBook} />
       <div className="quick-nav">
         <a href="#header"></a>
         <a href="#about"></a>
@@ -60,18 +52,17 @@ function App() {
         <a href="#mission"></a>
       </div>
       <header id="header">
-        {/* <img src={headImage} height='200px'></img> */}
         <div className='head-overlay'></div>
         <p>Hello, I'm</p>
         <h1>Anne Igah</h1>
-        {/* <p>I gat you brr</p> */}
-        <a href="#about" className="animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
+        <a href="#about" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
           <span className="fa-stack fa"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-arrow-down fa-stack-1x fa-inverse"></i></span>
         </a>
         <img src={headImage} alt="Anne" />
       </header>
       <div id="about" className="section">
         <div className='animate text'>
+
           <h2>About Anne</h2>
           <p>
             Anne has a mental Health Diploma and also  furthering her studies in the mental health sector.
@@ -86,23 +77,17 @@ function App() {
             wellness and to find hope again to win.
           </p>
         </div>
-        {/* <img src={aboutImg} alt="" width="200px" className="animate image"></img> */}
+        <a href="#also" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
+          <span className="fa-stack fa"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-arrow-down fa-stack-1x fa-inverse"></i></span>
+        </a>
       </div >
 
       <div id="also" className="section">
         <img src={aboutImg} alt="" width="300px" className='animate image'></img>
 
         <div className='animate text'>
-          {/* <p>
-            Also, Anne is a compassionate minister of God with the passion and
-            calling to equip and reintegrate the depressed. She dived into the
-            health profession as inspired and directed by God. She wants those
-            suffering from depression and anxiety disorder’s to obtain total
-            wellness and to find hope again to win.
-          </p> */}
-
           <p>
-            She has a book <span className='book-title'>Titled Conquering Depression And Living Happily</span>.
+            She has a book titled <button className='book-title' onClick={() => buyBook()}>Conquering Depression And Living Happily</button>.
             This book is inspired by God, born out of real experiences
             and research. The  book is a story of her life and how
             she overcame Depression.. She desires to channel her energy to
@@ -116,7 +101,9 @@ function App() {
             many want to hide.
           </p>
         </div>
-
+        <a href="#mission" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
+          <span className="fa-stack fa"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-arrow-down fa-stack-1x fa-inverse"></i></span>
+        </a>
       </div >
 
       <div id="mission" className="section mission animate text">
@@ -170,7 +157,7 @@ function App() {
 
       </div>
 
-      <Book />
+      {bookModal && <Book hanldeModal={buyBook} />}
     </>
   )
 }

@@ -11,10 +11,10 @@
 
 .menu-btn {
   position: fixed;
-  right: 0px;
-  top: 0px;
+  right: 10px;
+  top: 10px;
   z-index: 6;
-  color: grey;
+  color: rgb(224, 224, 224);
   font-size: 20px;
 }
 
@@ -37,7 +37,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   opacity: 0.8;
-  border: 1px solid rgb(255, 63, 63);
+  border: 1px solid rgb(26, 26, 26);
 }
 
 header {
@@ -90,9 +90,9 @@ header p {
   font-style: italic;
 }
 
-header a {
+.go {
   position: absolute;
-  bottom: 50px;
+  bottom: 10vh;
   font-size: 30px;
   /* color: whitesmoke; */
   color: grey;
@@ -100,6 +100,7 @@ header a {
 }
 
 .section {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -115,7 +116,6 @@ header a {
   justify-content: space-around;
   align-items: center;
   color: rgb(108, 108, 108);
-
 }
 
 
@@ -148,6 +148,8 @@ header a {
   color: rgb(143, 143, 143);
   /* gap: 30px; */
 }
+
+
 
 #also p {
   width: 500px;
@@ -226,7 +228,7 @@ header a {
 
 @media screen and (max-width: 800px) {
 
-  /* styles for screens smaller than 600px */
+  /* styles for screens smaller than 800px */
   .mission>div {
     flex-direction: column;
   }

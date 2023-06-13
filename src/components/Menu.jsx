@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import './menu.css'
 
-function Menu({ menu }) {
+function Menu({ menu, handleBook }) {
     return (
         <div className={`menu ${menu && "open"}`}>
-            <a href='#'>Book</a>
-            <a href='#'>Contact</a>
+            <button onClick={handleBook}>Book</button>
+            <button>Contact</button>
         </div>)
 }
 
