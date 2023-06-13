@@ -16,11 +16,11 @@
     transition: 0.4s;
     overflow: hidden;
 
-    top: 25%;
-    left: 15vw;
+    top: 0;
+    /* left: 15vw; */
     z-index: 5;
 
-    width: 70vw;
+    width: 100vw;
     height: 0;
     padding: 0;
     /* transform: translateY(-100vh); */

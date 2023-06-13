@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import "animate.css"
-import { PaystackButton } from "react-paystack"
 
 import headImage from './images/anne (3).png'
 import aboutImg from "./images/anne (3).png"
@@ -44,7 +41,7 @@ function App() {
 
       <button className='menu-btn' onClick={() => { setMenu(prevState => !prevState); }}>{menu ? <i className="fa fa-2x fa-times"></i>
         : <i className="fa fa-2x fa-bars"></i>}</button>
-      <Menu menu={menu} handleBook={buyBook} />
+      <Menu menu={menu} handleMenu={setMenu} handleBook={buyBook} />
       <div className="quick-nav">
         <a href="#header"></a>
         <a href="#about"></a>
@@ -158,8 +155,15 @@ function App() {
 
 
       </div>
-      <footer>
-
+      <hr />
+      <footer id="contact">
+        <p>Anne</p>
+        <p>Igah</p>
+        <div>
+          <a href="#"><i className="fa fa-2x fa-facebook-square"></i></a>
+          <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a>
+          <a href="#"><i className="fa fa-2x fa-instagram"></i></a>
+        </div>
       </footer>
       {bookModal && <Book hanldeModal={buyBook} />}
     </>
