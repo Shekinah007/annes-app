@@ -53,8 +53,8 @@ function App() {
       </div>
       <header id="header">
         <div className='head-overlay'></div>
-        <p>Hello, I'm</p>
-        <h1>Anne Igah</h1>
+        <p className='animate head-right'>Hello, I'm</p>
+        <h1 className='animate head-left'>Anne Igah</h1>
         <a href="#about" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
           <span className="fa-stack fa"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-arrow-down fa-stack-1x fa-inverse"></i></span>
         </a>
@@ -83,7 +83,9 @@ function App() {
       </div >
 
       <div id="also" className="section">
-        <img src={aboutImg} alt="" width="300px" className='animate image'></img>
+        <div className='img-container'>
+          <img src={aboutImg} alt="" width="300px" className='animate image'></img>
+        </div>
 
         <div className='animate text'>
           <p>
@@ -106,10 +108,10 @@ function App() {
         </a>
       </div >
 
-      <div id="mission" className="section mission animate text">
+      <div id="mission" className="section mission ">
         {/* <div className="animate text"> */}
 
-        <div className="">
+        <div className="animate text">
           <h3>Mission:</h3>
           <hr />
           {/* <br /> */}
@@ -118,7 +120,7 @@ function App() {
           </p>
         </div>
 
-        <div className="core">
+        <div className="core animate text">
           <h3>Core Values:</h3>
           <hr />
           {/* <br /> */}
@@ -135,7 +137,7 @@ function App() {
 
         <br />
 
-        <div className="objectives">
+        <div className="objectives animate text">
           <h3>Objectives And Goals</h3>
           <hr />
           <br />
@@ -156,7 +158,9 @@ function App() {
 
 
       </div>
+      <footer>
 
+      </footer>
       {bookModal && <Book hanldeModal={buyBook} />}
     </>
   )
