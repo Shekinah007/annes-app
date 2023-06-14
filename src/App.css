@@ -2,6 +2,11 @@
   font-size: 16px;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .menu-btn {
   position: fixed;
   right: 10px;
@@ -223,18 +228,22 @@ footer {
   padding-block: 100px;
   padding-inline: 100px;
   background-color: black;
-  line-height: 65px;
   height: 50vh;
   width: 100vw;
   box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-footer p {
+footer .name {
   font-size: 70px;
   font-weight: bolder;
+  line-height: 65px;
 }
 
-footer div {
+footer .text {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -297,7 +306,11 @@ footer a:hover {
   }
 
   footer {
-    padding-inline: 30px;
+    padding-inline: 20px;
   }
 
+}
+
+.email {
+  font-size: 12px;
 }

@@ -147,13 +147,16 @@ function App() {
       </div>
       <hr />
       <footer id="contact">
-        <p className='animate head-left'>Anne</p>
-        <p className='animate head-right'>Igah</p>
+        <div className='name'>
+          <p className='animate head-left'>Anne</p>
+          <p className='animate head-right'>Igah</p>
+        </div>
         <div className='animate text'>
           <a href="#"><i className="fa fa-2x fa-facebook-square"></i></a>
           <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a>
           <a href="#"><i className="fa fa-2x fa-instagram"></i></a>
         </div>
+        <p className="email">anneigah@gmail.com</p>
       </footer>
       {bookModal && <Book hanldeModal={buyBook} />}
     </>
