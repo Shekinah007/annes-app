@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background: rgba(0, 0, 0, 0.758);
+    background: rgb(0, 0, 0);
     position: fixed;
     transition: 0.4s;
     overflow: hidden;

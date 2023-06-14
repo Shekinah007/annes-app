@@ -157,9 +157,9 @@ function App() {
       </div>
       <hr />
       <footer id="contact">
-        <p>Anne</p>
-        <p>Igah</p>
-        <div>
+        <p className='animate head-left'>Anne</p>
+        <p className='animate head-right'>Igah</p>
+        <div className='animate text'>
           <a href="#"><i className="fa fa-2x fa-facebook-square"></i></a>
           <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a>
           <a href="#"><i className="fa fa-2x fa-instagram"></i></a>
