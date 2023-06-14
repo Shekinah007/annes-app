@@ -1,12 +1,5 @@
 #root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* text-align: center; */
   font-size: 16px;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 .menu-btn {
@@ -23,9 +16,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   position: fixed;
-  right: 5px;
+  right: 10px;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -37,29 +29,29 @@
   border-radius: 50%;
   opacity: 0.8;
   border: 1px solid rgb(26, 26, 26);
+  transition: 0.3s;
+}
+
+.quick-nav a:hover {
+  background-color: rgb(13, 142, 255);
 }
 
 header {
   height: 100vh;
-  /* background-color: antiquewhite; */
   display: flex;
   flex-direction: column;
   place-items: center;
   justify-content: center;
   font-size: 17px;
-  /* gap: 10px; */
   position: relative;
   text-align: center;
-  background-image: url("./images/anne\ \(3\).png");
+  /* background-image: url("./images/anne\ \(3\).png"); */
   background-size: cover;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: black; */
   overflow: hidden;
 }
-
-
 
 header img {
   z-index: 0;
@@ -85,8 +77,6 @@ header p {
   font-weight: 500;
   color: rgb(154, 154, 154);
   font-style: italic;
-  /* transform: translateX(50px); */
-  /* transform: translate(0); */
 }
 
 header h1 {
@@ -116,9 +106,6 @@ header h1 {
   align-items: center;
   color: rgb(108, 108, 108);
 }
-
-
-
 
 
 #about {
@@ -184,12 +171,6 @@ header h1 {
   max-width: 80vw;
 }
 
-/* .mission div:first-child {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-} */
-
 .core li {
   list-style: none;
 }
@@ -228,7 +209,6 @@ header h1 {
 
 .scroll-animation {
   opacity: 1;
-  /* transform: translateY(0); */
   transform: translate(0);
 }
 
@@ -236,28 +216,17 @@ header h1 {
 .scroll-down {}
 
 
-@media screen and (max-width: 800px) {
 
-  /* styles for screens smaller than 800px */
-  .mission>div {
-    flex-direction: column;
-  }
-
-  #also img {
-    border-radius: 100%;
-    height: 260px;
-    width: 260px;
-  }
-
-}
 
 footer {
   text-align: right;
   padding-block: 100px;
-  padding-inline: 30px;
+  padding-inline: 100px;
   background-color: black;
   line-height: 65px;
   height: 50vh;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 footer p {
@@ -313,3 +282,22 @@ footer a:hover {
 .burger.open .burger-line.bottom {
   transform: translateY(-8px) rotate(-45deg);
 } */
+
+@media screen and (max-width: 800px) {
+
+  /* styles for screens smaller than 800px */
+  .mission>div {
+    flex-direction: column;
+  }
+
+  #also img {
+    border-radius: 100%;
+    height: 260px;
+    width: 260px;
+  }
+
+  footer {
+    padding-inline: 30px;
+  }
+
+}
