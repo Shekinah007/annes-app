@@ -86,7 +86,7 @@ function App() {
 
         <div className='animate text'>
           <p>
-            She has a book titled <button className='book-title' onClick={() => buyBook()}>Conquering Depression And Living Happily</button>.
+            She has a book titled <span className='book-title' onClick={() => buyBook()}>Conquering Depression And Living Happily</span>.
             This book is inspired by God, born out of real experiences
             and research. The  book is a story of her life and how
             she overcame Depression.. She desires to channel her energy to
@@ -106,12 +106,10 @@ function App() {
       </div >
 
       <div id="mission" className="section mission ">
-        {/* <div className="animate text"> */}
 
         <div className="animate text">
           <h3>Mission:</h3>
           <hr />
-          {/* <br /> */}
           <p>
             To create proper awareness on the subject of depression, enlightenment for early detention, to effectively overcome these challenges via counseling, coaching, training and mentoring.
           </p>
@@ -120,15 +118,12 @@ function App() {
         <div className="core animate text">
           <h3>Core Values:</h3>
           <hr />
-          {/* <br /> */}
           <p>
-            {/* <ul> */}
-            <li><span className='caps'>C</span>. Compassion for persons with mental health challenges</li>
-            <li><span className='caps'>A</span>. Awareness On Early Detection</li>
-            <li><span className='caps'>R</span>. Resonate- With Your True Identity</li>
-            <li><span className='caps'>E</span>. Empathy- Identifying with Persons With Mental Health challenges</li>
-            <li><span className='caps'>S</span>. Safe Habour- creating the right environment for total wellness.</li>
-            {/* </ul> */}
+            <li><span className='caps'>C</span>ompassion for persons with mental health challenges</li>
+            <li><span className='caps'>A</span>wareness On Early Detection</li>
+            <li><span className='caps'>R</span>esonate- With Your True Identity</li>
+            <li><span className='caps'>E</span>mpathy- Identifying with Persons With Mental Health challenges</li>
+            <li><span className='caps'>S</span>afe Habour- creating the right environment for total wellness.</li>
           </p>
         </div>
 
@@ -148,11 +143,6 @@ function App() {
             •To create the right environment for total wellness
           </p>
         </div>
-
-        {/* </div> */}
-
-
-
 
       </div>
       <hr />
