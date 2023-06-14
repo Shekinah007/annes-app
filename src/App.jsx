@@ -3,7 +3,7 @@ import './App.css'
 import "animate.css"
 
 import headImage from './images/anne (3).png'
-import aboutImg from "./images/anne (3).png"
+import aboutImg from "./images/anne (5).jpg"
 import Menu from './components/Menu'
 import Book from './components/Book'
 
