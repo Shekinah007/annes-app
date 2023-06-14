@@ -23,8 +23,8 @@ const Book = ({ hanldeModal }) => {
         publicKey,
         text: "Pay Now",
         onSuccess: () =>
-            alert("Thanks for doing business with us! Come back soon!!"),
-        onClose: () => console.log("Wait! You need this oil, don't go!!!!"),
+            hanldeModal(false),
+        onClose: () => hanldeModal(false),
     }
 
     return (
