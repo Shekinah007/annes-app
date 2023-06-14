@@ -20,15 +20,14 @@
 
 .quick-nav {
   z-index: 2;
-  position: fixed;
-  right: 10px;
-  top: 50%;
-  /* width: 30px; */
-  /* height: 20px; */
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  position: fixed;
+  right: 5px;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .quick-nav a {
