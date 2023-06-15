@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import "animate.css"
 
-import headImage from './images/anne (3).png'
-import aboutImg from "./images/anne (5).jpg"
+import headImage from './images/anne1.jpg'
+import aboutImg from "./images/anne2.jpg"
+import footerImg from "./images/anne3.jpg"
 import Menu from './components/Menu'
 import Book from './components/Book'
 
@@ -147,16 +148,21 @@ function App() {
       </div>
       <hr />
       <footer id="contact">
-        <div className='name'>
-          <p className='animate head-left'>Anne</p>
-          <p className='animate head-right'>Igah</p>
+        <div className='contact-img-cont'>
+          <img src={footerImg} alt="" />
         </div>
-        <div className='animate text'>
-          <a href="#"><i className="fa fa-2x fa-facebook-square"></i></a>
-          <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a>
-          <a href="#"><i className="fa fa-2x fa-instagram"></i></a>
+        <div>
+          <div className='name'>
+            <p className='animate head-left'>Anne</p>
+            <p className='animate head-right'>Igah</p>
+          </div>
+          <div className='animate text'>
+            <a href="#"><i className="fa fa-2x fa-facebook-square"></i></a>
+            <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a>
+            <a href="#"><i className="fa fa-2x fa-instagram"></i></a>
+          </div>
+          <p className="email">anneigah@gmail.com</p>
         </div>
-        <p className="email">anneigah@gmail.com</p>
       </footer>
       {bookModal && <Book hanldeModal={buyBook} />}
     </>
