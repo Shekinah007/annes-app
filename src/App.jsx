@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import "animate.css"
 
-import headImage from './images/anne1.jpg'
-import aboutImg from "./images/anne2.jpg"
+import headImage from './images/anne2.jpg'
+import aboutImg from "./images/anne5.jpg"
 import footerImg from "./images/anne3.jpg"
 import Menu from './components/Menu'
 import Book from './components/Book'
@@ -24,6 +24,7 @@ function App() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("scroll-animation");
+          console.log("INtersect!!");
         } else {
           entry.target.classList.remove("scroll-animation");
         }
@@ -80,9 +81,14 @@ function App() {
         </a>
       </div >
 
+      {/* <footer id="contact">
+        <div className='contact-img-cont'>
+          <img src={footerImg} alt="" />
+        </div> */}
+
       <div id="also" className="section">
         <div className='img-container'>
-          <img src={aboutImg} alt="" width="300px" className='animate image'></img>
+          {/* <img src={aboutImg} alt="" id="section-img" className='section-img animate image'></img> */}
         </div>
 
         <div className='animate text'>
@@ -116,6 +122,8 @@ function App() {
           </p>
         </div>
 
+        <br />
+
         <div className="core animate text">
           <h3>Core Values:</h3>
           <hr />
@@ -131,17 +139,17 @@ function App() {
         <br />
 
         <div className="objectives animate text">
-          <h3>Objectives And Goals</h3>
+          <h3>Organaization Goals And Objectives</h3>
           <hr />
-          <br />
           <p>
-            <li>Adequate and appropriate enlightenment and orientation for persons with mental health challenges</li>
-            <li>Creating Awareness for early detention of mental illness</li>
-            <li>Advocating for accurate Diagnosis</li>
-            <li>Advocacy for accurate and efficient treatment</li>
-            <li>Providing Emotional Support for persons with mental health challenges</li>
-            •Enlightement on the spiritual side of depression
-            •To create the right environment for total wellness
+            <li>1. To create annual enlightenment programme for 100 persons with mental health to access information that is adequate and appropriate for them to begin their healing joining.</li>
+            <li>2. To create early detection awareness programme for 200 persons with mental health to enable them reverse a spiral downturn.</li>
+            <li>3. To Provide counselling and therapeutic services for persons with mental health challenges.</li>
+            <li>4. To provide relevant information, to guide others to prevent depression and those with depression to help them overcome depression.</li>
+            <li>5. To equip and reintegrate the depressed. Empower them to obtain total wellness and find hope again to win.</li>
+            <li>6. To Create public awareness and enlightenment advocating against stigmatization of persons suffering from mental illness</li>
+            <li>7. To provide emotional support and conducive environment for therapeutic services and relaxation for persons with depression.</li>
+
           </p>
         </div>
 
