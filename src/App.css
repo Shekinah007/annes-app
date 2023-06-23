@@ -65,6 +65,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+
 }
 
 header img {
@@ -99,7 +100,7 @@ header h1 {
 
 .go {
   position: absolute;
-  bottom: 10vh;
+  bottom: 5vh;
   font-size: 30px;
   color: grey;
   font-size: 20px;
@@ -158,17 +159,10 @@ header h1 {
 }
 
 
-
-
-
-
 #also img {
   /* height: 420px; */
-
   height: auto;
   width: 100%;
-
-
 }
 
 
@@ -246,18 +240,28 @@ header h1 {
 
 
 
+.counselling {
+  /* font-size: 20px;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 10px;
+  left: 10px; */
+}
 
 footer {
   text-align: right;
-  padding-block: 100px;
+  padding-block: 10px;
   padding-inline: 100px;
   background-color: black;
   height: 50vh;
   width: 100vw;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
@@ -299,7 +303,7 @@ footer a:hover {
   height: 250px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 550px) {
   .contact-img-cont {
     height: 130px;
     width: 130px;
@@ -307,7 +311,9 @@ footer a:hover {
   }
 
   footer .name {
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 40px;
+
   }
 }
 
@@ -354,6 +360,15 @@ footer a:hover {
 
   footer {
     padding-inline: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  footer div:nth-child(2) {
+    /* background-color: red; */
+    padding: none;
+    width: 60%;
   }
 
   .img-container {

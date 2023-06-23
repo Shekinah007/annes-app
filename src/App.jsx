@@ -52,8 +52,12 @@ function App() {
       </div>
       <header id="header">
         <div className='head-overlay'></div>
+        <br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br>
         <p className='animate head-right'>Hello, I'm</p>
         <h1 className='animate head-left'>Anne Igah</h1>
+        <p>CEO: ANNE'S WELLNESS HARBOUR</p>
         <a href="#about" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
           <span className="fa-stack fa"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-arrow-down fa-stack-1x fa-inverse"></i></span>
         </a>
@@ -62,7 +66,13 @@ function App() {
       <div id="about" className="section">
         <div className='animate text'>
 
+          <h2>Anne's Well Habour</h2>
+          <hr />
+          <p>A Wellness and safe Habour for the mentally challenged.</p>
+          <br />
+
           <h2>About Anne</h2>
+          <hr />
           <p>
             Anne has a mental Health Diploma and also  furthering her studies in the mental health sector.
             Anne Igah is a Business Administration graduate.  She is an ordained Pastor and she has a Diploma from All Nations For Christ Bible Institute.. She is a graduate from the Institute for National Transformation with the Oakseed Executive leadership course certificate. She is the CEO of Annie Devices and More.
@@ -81,10 +91,6 @@ function App() {
         </a>
       </div >
 
-      {/* <footer id="contact">
-        <div className='contact-img-cont'>
-          <img src={footerImg} alt="" />
-        </div> */}
 
       <div id="also" className="section">
         <div className='img-container'>
@@ -93,7 +99,7 @@ function App() {
 
         <div className='animate text'>
           <p>
-            She has a book titled <span className='book-title' onClick={() => buyBook()}>Conquering Depression And Living Happily</span>.
+            She has a book titled <a href="#book" className='book-title' onClick={() => buyBook()}>Conquering Depression And Living Happily</a>.
             This book is inspired by God, born out of real experiences
             and research. The  book is a story of her life and how
             she overcame Depression.. She desires to channel her energy to
@@ -107,10 +113,16 @@ function App() {
             many want to hide.
           </p>
         </div>
+
         <a href="#mission" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
           <span className="fa-stack fa"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-arrow-down fa-stack-1x fa-inverse"></i></span>
         </a>
+
+        <Book hanldeModal={buyBook} />
+
       </div >
+
+
 
       <div id="mission" className="section mission ">
 
@@ -155,6 +167,9 @@ function App() {
 
       </div>
       <hr />
+
+
+
       <footer id="contact">
         <div className='contact-img-cont'>
           <img src={footerImg} alt="" />
@@ -164,15 +179,18 @@ function App() {
             <p className='animate head-left'>Anne</p>
             <p className='animate head-right'>Igah</p>
           </div>
+          <br />
           <div className='animate text'>
             <a href="#"><i className="fa fa-2x fa-facebook-square"></i></a>
             <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a>
             <a href="#"><i className="fa fa-2x fa-instagram"></i></a>
           </div>
           <p className="email">anneigah@gmail.com</p>
+          <br />
+          <p>For counselling call: 08061726535</p>
         </div>
       </footer>
-      {bookModal && <Book hanldeModal={buyBook} />}
+      {/* {bookModal && <Book hanldeModal={buyBook} />} */}
     </>
   )
 }

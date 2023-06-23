@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import "./books.css"
+// import "./books.css"
+import "./book.css"
 
 import { PaystackButton } from "react-paystack";
 import bookImg from "../images/OIP.jpg"
@@ -21,25 +22,29 @@ const Book = ({ hanldeModal }) => {
             phone,
         },
         publicKey,
-        text: "Pay Now",
+        text: "Get Book",
         onSuccess: () =>
             hanldeModal(false),
         onClose: () => hanldeModal(false),
     }
 
     return (
-        <div className='container'>
-            <span className="close-window fa-stack fa-lg" onClick={hanldeModal}>
+        <div id="book" className='container'>
+
+            {/* <span className="close-window fa-stack fa-lg" onClick={hanldeModal}>
                 <i className="fa fa-square fa-stack-2x"></i>
                 <i className="fa fa-times fa-stack-1x fa-inverse"></i>
-            </span>
+            </span> */}
+
             <div className='item'>
-                <img src={bookImg} alt='book' />
+                <img src={bookImg} alt='book' id="book-img" className='' />
                 <div className='item-details'>
                     <p className='title'>Conquering Depression And Living Happily</p>
                     <p className='price'>N1500</p>
                 </div>
             </div>
+            <r />
+            {/* <br /> */}
 
 
             <div className="checkout-form">
