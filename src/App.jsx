@@ -6,7 +6,8 @@ import headImage from './images/anne2.jpg'
 import aboutImg from "./images/anne5.jpg"
 import footerImg from "./images/anne3.jpg"
 import Menu from './components/Menu'
-import Book from './components/Book'
+// import Book from './components/Book'
+import GetBook from './components/GetBook'
 
 function App() {
 
@@ -99,7 +100,7 @@ function App() {
 
         <div className='animate text'>
           <p>
-            She has a book titled <a href="#book" className='book-title' onClick={() => buyBook()}>Conquering Depression And Living Happily</a>.
+            She has a book titled <a href="#get-book" className='book-title' onClick={() => buyBook()}>Conquering Depression And Living Happily</a>.
             This book is inspired by God, born out of real experiences
             and research. The  book is a story of her life and how
             she overcame Depression.. She desires to channel her energy to
@@ -118,11 +119,13 @@ function App() {
           <span className="fa-stack fa"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-arrow-down fa-stack-1x fa-inverse"></i></span>
         </a>
 
-        <Book hanldeModal={buyBook} />
+        <br />
+
+        {/* <Book hanldeModal={buyBook} /> */}
 
       </div >
 
-
+      <GetBook />
 
       <div id="mission" className="section mission ">
 
@@ -181,13 +184,14 @@ function App() {
           </div>
           <br />
           <div className='animate text'>
-            <a href="#"><i className="fa fa-2x fa-facebook-square"></i></a>
-            <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a>
-            <a href="#"><i className="fa fa-2x fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=1000092071735" target="_blank"><i className="fa fa-2x fa-facebook-square"></i></a>
+            {/* <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a> */}
+            <a href="https://www.youtube.com/@anneIgah353" target='_blank'><i className="fa fa-2x fa-youtube-play"></i></a>
+            <a href="https://www.instagram.com/anne_igah/" target="_blank" ><i className="fa fa-2x fa-instagram"></i></a>
           </div>
           <p className="email">anneigah@gmail.com</p>
           <br />
-          <p>For counselling call: 08061726535</p>
+          <p>For counselling call: <span id="phone">08061726535</span></p>
         </div>
       </footer>
       {/* {bookModal && <Book hanldeModal={buyBook} />} */}

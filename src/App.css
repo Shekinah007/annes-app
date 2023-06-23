@@ -382,3 +382,8 @@ footer a:hover {
 .email {
   font-size: 12px;
 }
+
+#phone {
+  color: blue !important;
+  text-decoration: underline;
+}

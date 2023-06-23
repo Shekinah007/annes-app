@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
-// import "./books.css"
-// import "./book.css"
+import "./getbook.css"
 
 import { PaystackButton } from "react-paystack";
 import bookImg from "../images/OIP.jpg"
 
-const Book = ({ hanldeModal }) => {
 
+const GetBook = () => {
     const publicKey = "pk_test_eb2e4ea24c9ae7e77dc4055679e1e6ee94a2f8de";
     const amount = 10000 // Remember, set in kobo!;
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
-
 
     const componentProps = {
         email,
@@ -29,23 +27,14 @@ const Book = ({ hanldeModal }) => {
     }
 
     return (
-        <div id="book" className='container'>
-
-            {/* <span className="close-window fa-stack fa-lg" onClick={hanldeModal}>
-                <i className="fa fa-square fa-stack-2x"></i>
-                <i className="fa fa-times fa-stack-1x fa-inverse"></i>
-            </span> */}
-
-            <div className='item'>
-                <img src={bookImg} alt='book' id="book-img" className='book-img' />
-                <div className='item-details'>
+        <div id="get-book" className='section get-book '>
+            <div>
+                <img src={bookImg} alt="book" />
+                <div className='item'>
                     <p className='title'>Conquering Depression And Living Happily</p>
                     <p className='price'>N1500</p>
                 </div>
             </div>
-
-            {/* <br /> */}
-
 
             <div className="checkout-form">
                 <div className="checkout-field">
@@ -78,4 +67,6 @@ const Book = ({ hanldeModal }) => {
     )
 }
 
-export default Book
+export default GetBook
+
+

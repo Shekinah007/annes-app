@@ -9,11 +9,7 @@
     /* width: 100vw; */
 }
 
-@media screen and (min-width: 800px) {
-    .container {
-        flex-direction: row;
-    }
-}
+
 
 .item {
     /* background-color: red; */
@@ -78,4 +74,29 @@
     width: 100%;
     height: 45px;
     margin-top: 20px;
+}
+
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .item-details {
+        /* position: absolute; */
+        top: 20px;
+        left: 20px;
+        font-weight: bolder;
+        width: unset;
+
+    }
+
+
+    #book-img {
+        /* height: 20px; */
+        /* width: 10px; */
+        width: 100%;
+        height: 20px;
+        object-fit: cover;
+    }
 }
