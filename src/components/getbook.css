@@ -51,6 +51,8 @@
     padding: 8px;
     border-radius: 5px;
     font-size: 18px;
+    border: 1px solid black;
+
 }
 
 .get-book label {

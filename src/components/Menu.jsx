@@ -4,7 +4,7 @@ import './menu.css'
 function Menu({ menu, handleBook, handleMenu }) {
     return (
         <div className={`menu ${menu && "open"}`}>
-            <button onClick={handleBook}>Book</button>
+            <a href="#get-book" onClick={() => handleMenu(false)}>Book</a>
             <div className="book-underline"></div>
             <a href="#contact" onClick={() => handleMenu(false)}>Contact</a>
             <div className="contact-underline"></div>

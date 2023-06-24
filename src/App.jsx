@@ -184,10 +184,11 @@ function App() {
           </div>
           <br />
           <div className='animate text'>
-            <a href="https://www.facebook.com/profile.php?id=1000092071735" target="_blank"><i className="fa fa-2x fa-facebook-square"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100009209071735" target="_blank"><i className="fa fa-2x fa-facebook-square"></i></a>
             {/* <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a> */}
-            <a href="https://www.youtube.com/@anneIgah353" target='_blank'><i className="fa fa-2x fa-youtube-play"></i></a>
-            <a href="https://www.instagram.com/anne_igah/" target="_blank" ><i className="fa fa-2x fa-instagram"></i></a>
+            {/* <a href="https://www.youtube.com/@anneIgah353" target='_blank'><i className="fa fa-2x fa-youtube-play"></i></a> */}
+            <a href="https://www.youtube.com/@anneIgah353" target="_blank"><i className="fa fa-2x fa-youtube-square"></i></a>
+            <a href="https://www.instagram.com/anne_igah/?fbclid=IwAR2nuHz7fJbhKlt2Rv6BEBeOpYx7P5N7IZa4Ht185qq5pjV110LWn9FKbTE" target="_blank" ><i className="fa fa-2x fa-instagram"></i></a>
           </div>
           <p className="email">anneigah@gmail.com</p>
           <br />
