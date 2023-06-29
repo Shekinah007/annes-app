@@ -67,7 +67,7 @@ function App() {
       <div id="about" className="section">
         <div className='animate text'>
 
-          <h2>Anne's Well Habour</h2>
+          <h2>Anne's Wellness Habour</h2>
           <hr />
           <p>A Wellness and safe Habour for the mentally challenged.</p>
           <br />
@@ -84,7 +84,7 @@ function App() {
             calling to equip and reintegrate the depressed. She dived into the
             health profession as inspired and directed by God. She wants those
             suffering from depression and anxiety disorder’s to obtain total
-            wellness and to find hope again to win.
+            wellness and to find how to win again.
           </p>
         </div>
         <a href="#also" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
@@ -186,7 +186,7 @@ function App() {
           <div className='animate text'>
             <a href="https://www.facebook.com/profile.php?id=100009209071735" target="_blank"><i className="fa fa-2x fa-facebook-square"></i></a>
             {/* <a href="#"><i className="fa fa-2x fa-twitter-square"></i></a> */}
-            {/* <a href="https://www.youtube.com/@anneIgah353" target='_blank'><i className="fa fa-2x fa-youtube-play"></i></a> */}
+            {/* <a href="https://www.youtube.com/@anneIgah353" target='_blank'><i className="fa fa-2x fa-youtube-plgay"></i></a> */}
             <a href="https://www.youtube.com/@anneIgah353" target="_blank"><i className="fa fa-2x fa-youtube-square"></i></a>
             <a href="https://www.instagram.com/anne_igah/?fbclid=IwAR2nuHz7fJbhKlt2Rv6BEBeOpYx7P5N7IZa4Ht185qq5pjV110LWn9FKbTE" target="_blank" ><i className="fa fa-2x fa-instagram"></i></a>
           </div>
