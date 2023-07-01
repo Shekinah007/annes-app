@@ -11,6 +11,23 @@ body * {
   /* overflow-x: hidden; */
 }
 
+.logo {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  height: 60px;
+  z-index: 20;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.expand-logo {
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -255,7 +272,7 @@ footer {
   padding-block: 10px;
   padding-inline: 100px;
   background-color: black;
-  height: 50vh;
+  min-height: 50vh;
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -263,6 +280,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
@@ -292,8 +310,8 @@ footer a:hover {
 }
 
 .contact-img-cont {
-  height: 140px;
-  width: 140px;
+  height: 170px;
+  width: 170px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid white;
@@ -303,11 +321,28 @@ footer a:hover {
   height: 250px;
 }
 
+footer .icons {
+  display: flex;
+  flex-direction: column;
+  /* color: grey; */
+}
+
+.icons span {
+  font-size: small;
+  margin-inline: 10px;
+}
+
+.icons i {
+  color: white;
+}
+
 @media screen and (max-width: 550px) {
   .contact-img-cont {
-    height: 130px;
-    width: 130px;
-
+    height: 160px;
+    width: 160px;
+    padding: none;
+    margin: none;
+    /* border-radius: 0; */
   }
 
   footer .name {
@@ -360,21 +395,24 @@ footer a:hover {
 
   footer {
     padding-inline: 20px;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 0px;
   }
 
   footer div:nth-child(2) {
     /* background-color: red; */
+    /* width: auto; */
     padding: none;
-    width: 60%;
+    /* width: 60%; */
   }
 
   .img-container {
     height: 250px;
     width: 250px;
   }
+
+  .contact-img-cont {}
 }
 
 
@@ -384,6 +422,6 @@ footer a:hover {
 }
 
 #phone {
-  color: blue !important;
+  color: rgb(107, 107, 249) !important;
   text-decoration: underline;
 }

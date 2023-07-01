@@ -4,7 +4,6 @@
     background-color: rgb(217, 217, 217);
     padding: 20px;
     box-sizing: border-box;
-    /* min-height: initial; */
 }
 
 .get-book>div:first-child {
@@ -13,8 +12,9 @@
 
 .item {
     position: absolute;
-    top: 0;
+    top: -5px;
     font-weight: bold;
+    left: -5px;
 }
 
 
@@ -30,7 +30,8 @@
 }
 
 .get-book img {
-    width: 100%;
+    width: 500px;
+    max-width: 100%;
 }
 
 .checkout-form {
@@ -38,7 +39,6 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
-
 }
 
 .checkout-field {

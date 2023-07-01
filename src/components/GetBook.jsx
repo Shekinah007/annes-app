@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./getbook.css"
 
 import { PaystackButton } from "react-paystack";
-import bookImg from "../images/OIP.jpg"
+import bookImg from "../images/book-cover.jpg"
 
 
 const GetBook = () => {
@@ -31,8 +31,8 @@ const GetBook = () => {
             <div>
                 <img src={bookImg} alt="book" />
                 <div className='item'>
-                    <p className='title'>Conquering Depression And Living Happily</p>
-                    <p className='price'>N1500</p>
+                    {/* <p className='title'>Conquering Depression And Living Happily</p> */}
+                    <p className='price'>N1000</p>
                 </div>
             </div>
 
