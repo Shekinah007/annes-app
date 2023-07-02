@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import "animate.css"
 
-import headImage from './images/anne2.jpg'
+import headImage from './images/AnneIgah.jpg'
 import aboutImg from "./images/anne5.jpg"
 import footerImg from "./images/anne3.jpg"
 import logoImg from "./images/awhlogo.jpg"
