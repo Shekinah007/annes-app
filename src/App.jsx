@@ -3,13 +3,15 @@ import './App.css'
 import "animate.css"
 
 import headImage from './images/AnneIgah.jpg'
-import aboutImg from "./images/anne5.jpg"
 import footerImg from "./images/anne3.jpg"
 import logoImg from "./images/awhlogo.jpg"
 
 
 import Menu from './components/Menu'
 import GetBook from './components/GetBook'
+
+
+
 
 function App() {
 
@@ -105,7 +107,7 @@ function App() {
 
         <div className='animate text'>
           <p>
-            She has a Book titled: <a href="#get-book" className='book-title' onClick={() => buyBook()}> CONQUERING DEPRESSION & LIVING HAPPILY - MY LIFE EXPERIENCE </a> is a
+            She has a Book titled: <a href="https://www.amazon.co.uk/dp/B0C9S5R3TQ?ref_=pe_3052080_397514860" target="_blank" rel="noreferrer" className='book-title' onClick={() => buyBook()}> CONQUERING DEPRESSION & LIVING HAPPILY - MY LIFE EXPERIENCE </a> is a
             book inspired by God, born out of real experiences and research work on the subject matter. This book
             is also a story of the author's life and how she overcame depression. Anne is a compassionate minister of God
             with passion and calling to equip and reintegrate the depressed. She wants them to obtain total wellness and
@@ -113,7 +115,7 @@ function App() {
             She is passionate about the subject and enthusiastic about the outcome. The book is designed for readers mentally,
             emotionally and spiritually against the dreaded mental illness
             called DEPRESSION which many suffer from all over the world and often seek to hide it. This book is needed for such a time
-            as this in our troubled world.
+            as this in our troubled world.
           </p>
         </div>
 
@@ -188,24 +190,24 @@ function App() {
           <div className='animate text icons'>
             <div>
               <span>Anne Igah</span>
-              <a href="https://www.facebook.com/profile.php?id=100009209071735" target="_blank"><i className="fa fa-2x fa-facebook-square"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100009209071735" target="_blank" rel="noreferrer"><i className="fa fa-2x fa-facebook-square"></i></a>
             </div>
 
             <div>
               <span>anne_igah</span>
-              <a href="https://www.instagram.com/anne_igah/?fbclid=IwAR2nuHz7fJbhKlt2Rv6BEBeOpYx7P5N7IZa4Ht185qq5pjV110LWn9FKbTE" target="_blank" ><i className="fa fa-2x fa-instagram"></i></a>
+              <a href="https://www.instagram.com/anne_igah/?fbclid=IwAR2nuHz7fJbhKlt2Rv6BEBeOpYx7P5N7IZa4Ht185qq5pjV110LWn9FKbTE" target="_blank" rel="noreferrer"><i className="fa fa-2x fa-instagram"></i></a>
             </div>
             <div>
               <span>anneIgah353</span>
-              <a href="https://www.youtube.com/@anneIgah353" target="_blank"><i className="fa fa-2x fa-youtube-square"></i></a>
+              <a href="https://www.youtube.com/@anneIgah353" target="_blank" rel="noreferrer"><i className="fa fa-2x fa-youtube-square"></i></a>
             </div>
             <div>
-              <span className="email">anneigah@gmail.com</span>
+              <span className="email">oamen.ehinome@gmail.com</span>
               <i className="fa fa-2x fa-envelope-square"></i>
             </div>
           </div>
           <br />
-          <p>For counselling call: <span id="phone">08061726535</span></p>
+          <p>For Counselling and Enquiries call: <span id="phone">08061726535</span></p>
         </div>
       </footer>
       {/* {bookModal && <Book hanldeModal={buyBook} />} */}

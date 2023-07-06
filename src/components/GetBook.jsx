@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import "./getbook.css"
 
 import { PaystackButton } from "react-paystack";
@@ -32,9 +32,14 @@ const GetBook = () => {
                 <img src={bookImg} alt="book" />
                 <div className='item'>
                     {/* <p className='title'>Conquering Depression And Living Happily</p> */}
-                    <p className='price'>N1000</p>
+                    <p className='price'>N2500</p>
                 </div>
+                <p className='pick-up'>Pick Up Address:</p>
+                <p className='address'>
+                    House 2, Road 2, Ikota Villa Residential Estate, by Mega Chicken. Off Lekki Epe Express Way.
+                </p>
             </div>
+
 
             <div className="checkout-form">
                 <div className="checkout-field">
@@ -63,6 +68,21 @@ const GetBook = () => {
                 </div>
                 <PaystackButton className="paystack-button" {...componentProps} />
             </div>
+
+            <hr></hr>
+            <div className='order'>
+                <p className='or'>OR</p>
+                <a className="amazon" href="https://www.amazon.co.uk/dp/B0C9S5R3TQ?ref_=pe_3052080_397514860" target="_blank" rel="noreferrer">
+                    Click here to order from Amazon
+                    {/* <i className="fa fa-1x fa-share-square-o"></i> */}
+                    {/* <span class="fa-stack fa-sm"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-share-square-o fa-stack-1x"></i></span> */}
+                    {/* <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-share-square-o fa-stack-1x "></i></span> */}
+                    <i className="fa fa-1x fa-share-square-o"></i>
+                </a>
+            </div>
+            <hr></hr>
+
+            {/* <br /> */}
         </div>
     )
 }
