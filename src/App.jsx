@@ -91,7 +91,7 @@ function App() {
             calling to equip and reintegrate the depressed. She dived into the
             health profession as inspired and directed by God. She wants those
             suffering from depression and anxiety disorder’s to obtain total
-            wellness and to find hope to win again.
+            wellness and find hope to win again.
           </p>
         </div>
         <a href="#also" className="go animate__animated animate__fadeOutDown animate__slow	1s animate__infinite	infinite">
