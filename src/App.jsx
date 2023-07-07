@@ -179,9 +179,9 @@ function App() {
 
       <footer id="contact">
         <div className='contact-img-cont'>
-          <img src={footerImg} alt="" />
+          {/* <img src={footerImg} alt="" className='footer-img' /> */}
         </div>
-        <div>
+        <div className='footer-two'>
           <div className='name'>
             <p className='animate head-left'>Anne</p>
             <p className='animate head-right'>Igah</p>
@@ -189,21 +189,27 @@ function App() {
           <br />
           <div className='animate text icons'>
             <div>
-              <span>Anne Igah</span>
               <a href="https://www.facebook.com/profile.php?id=100009209071735" target="_blank" rel="noreferrer"><i className="fa fa-2x fa-facebook-square"></i></a>
+              <br />
+              <span>Anne Igah</span>
             </div>
 
             <div>
+              <a href="https://www.instagram.com/anne_igah/?fbclid=IwAR2nuHz7fJbhKlt2Rv6BEBeOpYx7P5N7IZa4Ht185qq5pjV110LWn9FKbTE" target="_blank" rel="noreferrer">
+                <i className="fa fa-2x fa-instagram"></i>
+              </a>
+              <br />
               <span>anne_igah</span>
-              <a href="https://www.instagram.com/anne_igah/?fbclid=IwAR2nuHz7fJbhKlt2Rv6BEBeOpYx7P5N7IZa4Ht185qq5pjV110LWn9FKbTE" target="_blank" rel="noreferrer"><i className="fa fa-2x fa-instagram"></i></a>
+
             </div>
             <div>
-              <span>anneIgah353</span>
               <a href="https://www.youtube.com/@anneIgah353" target="_blank" rel="noreferrer"><i className="fa fa-2x fa-youtube-square"></i></a>
+              <br />
+              <span>anneIgah353</span>
             </div>
             <div>
-              <span className="email">oamen.ehinome@gmail.com</span>
               <i className="fa fa-2x fa-envelope-square"></i>
+              <span className="email">oamen.ehinome@gmail.com</span>
             </div>
           </div>
           <br />

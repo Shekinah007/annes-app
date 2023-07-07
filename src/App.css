@@ -58,7 +58,7 @@ p {
   width: 15px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 0.3;
   border: 1px solid rgb(26, 26, 26);
   transition: 0.3s;
 }
@@ -315,6 +315,11 @@ footer a:hover {
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid white;
+
+  background-image: url("./images/anne3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #contact img {
@@ -338,11 +343,15 @@ footer .icons {
 
 @media screen and (max-width: 550px) {
   .contact-img-cont {
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     padding: none;
     margin: none;
-    /* border-radius: 0; */
+  }
+
+  .footer-img {
+    height: 160px;
+    width: 160px;
   }
 
   footer .name {
@@ -350,36 +359,28 @@ footer .icons {
     line-height: 40px;
 
   }
+
+  .footer-two {
+    /* background-color: red !important; */
+    width: 220px;
+
+  }
 }
 
-/* .burger {
-  display: inline-block;
-  cursor: pointer;
-}
+@media screen and (max-width: 320px) {
+  .contact-img-cont {
+    height: 120px;
+    width: 120px;
+  }
 
-.burger-line {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px 0;
-  transition: transform 0.3s ease-in-out;
-}
+  footer {
+    padding-inline: 10px !important;
+  }
 
-.burger-line.middle {
-  width: 20px;
+  .footer-two {
+    width: 190px;
+  }
 }
-
-.burger.open .burger-line.top {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.burger.open .burger-line.middle {
-  opacity: 0;
-}
-
-.burger.open .burger-line.bottom {
-  transform: translateY(-8px) rotate(-45deg);
-} */
 
 @media screen and (max-width: 800px) {
 
@@ -408,8 +409,8 @@ footer .icons {
   }
 
   .img-container {
-    height: 250px;
-    width: 250px;
+    /* height: 250px;
+    width: 250px; */
   }
 
   .contact-img-cont {}
