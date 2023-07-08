@@ -319,7 +319,7 @@ footer a:hover {
   background-image: url("./images/anne3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 #contact img {
@@ -329,7 +329,6 @@ footer a:hover {
 footer .icons {
   display: flex;
   flex-direction: column;
-  /* color: grey; */
 }
 
 .icons span {
@@ -343,8 +342,8 @@ footer .icons {
 
 @media screen and (max-width: 550px) {
   .contact-img-cont {
-    height: 200px;
-    width: 200px;
+    height: 130px;
+    width: 130px;
     padding: none;
     margin: none;
   }
@@ -396,33 +395,22 @@ footer .icons {
 
   footer {
     padding-inline: 20px;
-    /* flex-direction: row; */
     flex-wrap: nowrap;
     gap: 0px;
   }
 
   footer div:nth-child(2) {
-    /* background-color: red; */
-    /* width: auto; */
     padding: none;
-    /* width: 60%; */
   }
 
   .img-container {
-    /* height: 250px;
-    width: 250px; */
+    height: 250px;
+    width: 250px;
+
   }
-
-  .contact-img-cont {}
-}
-
-
-
-.email {
-  font-size: 12px;
 }
 
 #phone {
-  color: rgb(107, 107, 249) !important;
+  color: rgb(149, 149, 255) !important;
   text-decoration: underline;
 }
