@@ -162,7 +162,7 @@ header h1 {
 .img-container {
   height: 350px;
   width: 350px;
-  border-radius: 50%;
+  border-radius: 70px;
   overflow: hidden;
   border: 5px solid white;
   display: flex;
@@ -404,8 +404,8 @@ footer .icons {
   }
 
   .img-container {
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
 
   }
 }

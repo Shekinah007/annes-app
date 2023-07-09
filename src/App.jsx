@@ -161,7 +161,7 @@ function App() {
           <h3>Organaization Goals And Objectives</h3>
           <hr />
           <p>
-            <li>1. To create annual enlightenment programme for 100 persons with mental health to access information that is adequate and appropriate for them to begin their healing joining.</li>
+            <li>1. To create annual enlightenment programme for 100 persons with mental health to access information that is adequate and appropriate for them to begin their healing journey.</li>
             <li>2. To create early detection awareness programme for 200 persons with mental health to enable them reverse a spiral downturn.</li>
             <li>3. To Provide counselling and therapeutic services for persons with mental health challenges.</li>
             <li>4. To provide relevant information, to guide others to prevent depression and those with depression to help them overcome depression.</li>
