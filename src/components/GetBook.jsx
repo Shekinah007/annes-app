@@ -7,7 +7,7 @@ import bookImg from "../images/book-cover.jpg"
 
 const GetBook = () => {
     const publicKey = "pk_test_eb2e4ea24c9ae7e77dc4055679e1e6ee94a2f8de";
-    const amount = 10000 // Remember, set in kobo!;
+    const amount = 250000 // Remember, set in kobo!;
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
