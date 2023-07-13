@@ -34,6 +34,11 @@ const GetBook = () => {
                     {/* <p className='title'>Conquering Depression And Living Happily</p> */}
                     <p className='price'>N2500</p>
                 </div>
+                <p className='pick-up'>Payment:</p>
+                <p>Access Bank: <span className="color">0006688978</span></p>
+                <p>Account Name:<span className="color"> Anne Igah</span></p>
+                <br />
+                <hr />
                 <p className='pick-up'>Pick Up Address:</p>
                 <p className='address'>
                     House 2, Road 2, Ikota Villa Residential Estate, by Mega Chicken. Off Lekki Epe Express Way.
@@ -41,8 +46,8 @@ const GetBook = () => {
             </div>
 
 
-            <div className="checkout-form">
-                <div className="checkout-field">
+            {/* <div className="checkout-form"> */}
+            {/* <div className="checkout-field">
                     <label>Name</label>
                     <input
                         type="text"
@@ -66,8 +71,8 @@ const GetBook = () => {
                         onChange={(e) => setPhone(e.target.value)}
                     />
                 </div>
-                <PaystackButton className="paystack-button" {...componentProps} />
-            </div>
+                <PaystackButton className="paystack-button" {...componentProps} /> */}
+            {/* </div> */}
 
             <hr></hr>
             <div className='order'>
