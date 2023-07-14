@@ -159,3 +159,9 @@ i {
     color: rgb(77, 156, 195);
     font-weight: 700;
 }
+
+.pay-and-contact {
+    display: flex;
+    flex-direction: row;
+
+}

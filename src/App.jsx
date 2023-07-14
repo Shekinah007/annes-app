@@ -208,8 +208,8 @@ function App() {
               <span>anneIgah353</span>
             </div>
             <div>
-              <i className="fa fa-2x fa-envelope-square"></i>
               <span className="email">oamen.ehinome@gmail.com</span>
+              <i className="fa fa-2x fa-envelope-square"></i>
             </div>
           </div>
           <br />

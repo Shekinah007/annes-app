@@ -35,8 +35,22 @@ const GetBook = () => {
                     <p className='price'>N2500</p>
                 </div>
                 <p className='pick-up'>Payment:</p>
-                <p>Access Bank: <span className="color">0006688978</span></p>
+                {/* <p>Access Bank: <span className="color">0006688978</span></p>
                 <p>Account Name:<span className="color"> Anne Igah</span></p>
+                <p>Contact: <span className='color'>08061726535</span></p> */}
+                <div className='pay-and-contact'>
+                    <div className="">
+                        <p>Access Bank:</p>
+                        <p>Account Name:</p>
+                        <p>Contact:</p>
+                    </div>
+                    {/* <hr /> */}
+                    <div>
+                        <p className="color">0006688978</p>
+                        <p className="color"> Anne Igah</p>
+                        <p className='color'>08061726535</p>
+                    </div>
+                </div>
                 <br />
                 <hr />
                 <p className='pick-up'>Pick Up Address:</p>
@@ -88,7 +102,7 @@ const GetBook = () => {
             <hr></hr>
 
             {/* <br /> */}
-        </div>
+        </div >
     )
 }
 
