@@ -11,6 +11,21 @@ body * {
   /* overflow-x: hidden; */
 }
 
+.site-link {
+  background-color: rgba(101, 101, 101, 0.919);
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+  padding: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: orange;
+  font-size: 15px;
+
+}
+
 .logo {
   position: fixed;
   top: 5px;
