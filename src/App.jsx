@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div>
-      <a href="http://anneswellnesshabour.com" className='site-link'>http://anneswellnesshabour.com</a>
+      <a href="http://anneswellnesshabour.com" className='site-link'>anneswellnesshabour.com</a>
       <img src={logoImg} alt="logo" className={`logo ${logo && "expand-logo"}`} onClick={() => { setLogo(prev => !prev) }} />
 
       <button className='menu-btn' onClick={() => { setMenu(prevState => !prevState); }}>{menu ? <i className="fa fa-2x fa-times"></i>
