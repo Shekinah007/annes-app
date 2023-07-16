@@ -7,7 +7,7 @@ import bookImg from "../images/book-cover.jpg"
 
 const GetBook = () => {
     const publicKey = "pk_test_eb2e4ea24c9ae7e77dc4055679e1e6ee94a2f8de";
-    const amount = 250000 // Remember, set in kobo!;
+    const amount = 300000 // Remember, set in kobo!;
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
@@ -32,7 +32,7 @@ const GetBook = () => {
                 <img src={bookImg} alt="book" />
                 <div className='item'>
                     {/* <p className='title'>Conquering Depression And Living Happily</p> */}
-                    <p className='price'>N2500</p>
+                    <p className='price'>N3000</p>
                 </div>
                 <p className='pick-up'>Payment:</p>
                 {/* <p>Access Bank: <span className="color">0006688978</span></p>
