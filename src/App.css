@@ -1,0 +1,428 @@
+#root {
+  font-size: 16px;
+  list-style-type: none;
+  /* overflow-x: hidden; */
+  /* box-sizing: border-box; */
+}
+
+body,
+body * {
+  /* box-sizing: border-box; */
+  /* overflow-x: hidden; */
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.site-link {
+  background: #0000003f;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.site-link:hover {
+  color: rgb(121, 194, 254);
+}
+
+.logo {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  height: 60px;
+  z-index: 20;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.expand-logo {
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 6;
+  color: rgb(224, 224, 224);
+  font-size: 20px;
+}
+
+.quick-nav {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quick-nav a {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  opacity: 0.3;
+  border: 1px solid rgb(26, 26, 26);
+  transition: 0.3s;
+}
+
+.quick-nav a:hover {
+  background-color: rgb(13, 142, 255);
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  font-size: 17px;
+  position: relative;
+  text-align: center;
+  /* background-image: url("./images/anne\ \(3\).png"); */
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+header img {
+  z-index: 0;
+  position: absolute;
+  height: 100vh;
+}
+
+header * {
+  z-index: 3;
+}
+
+.head-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+header p {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(154, 154, 154);
+  font-style: italic;
+}
+
+header h1 {
+  transform: translate(0);
+}
+
+.go {
+  position: absolute;
+  bottom: 8vh;
+  font-size: 30px;
+  color: grey;
+  font-size: 20px;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 100vh;
+  justify-content: center;
+  padding-inline: 30px;
+  padding-block: 50px;
+
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(108, 108, 108);
+}
+
+#about {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about p {
+  width: 500px;
+  max-width: 80vw;
+}
+
+#also {
+  background: black;
+  color: rgb(143, 143, 143);
+  gap: 40px;
+}
+
+.img-container {
+  height: 350px;
+  width: 350px;
+  border-radius: 70px;
+  overflow: hidden;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(172, 164, 164);
+
+  background-image: url("./images/anneDress1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#also img {
+  /* height: 420px; */
+  height: auto;
+  width: 100%;
+}
+
+#also p {
+  width: 500px;
+  max-width: 80vw;
+  align-self: flex-end;
+}
+
+.mission > div {
+  text-align: left;
+  color: rgb(179, 179, 179);
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.caps {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+}
+
+.mission p {
+  align-self: flex-start;
+  width: 500px;
+  max-width: 80vw;
+}
+.core {
+  margin-block: 30px;
+}
+
+.core li {
+  list-style: none;
+}
+
+.book-title {
+  color: rgb(77, 139, 246);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.animate {
+  transition: all 0.5s ease-out;
+  transition-delay: 0.4s;
+}
+
+.image {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.head-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.head-left {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.scroll-down {
+}
+
+.counselling {
+  /* font-size: 20px;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 10px;
+  left: 10px; */
+}
+
+footer {
+  text-align: right;
+  padding-block: 10px;
+  padding-inline: 100px;
+  background-color: black;
+  min-height: 50vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .name {
+  font-size: 70px;
+  font-weight: bolder;
+  line-height: 65px;
+}
+
+footer .text {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer a {
+  color: grey;
+  transition: 0.4s;
+}
+
+footer a:hover {
+  color: skyblue;
+}
+
+.contact-img-cont {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+
+  background-image: url("./images/anneWhite1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#contact img {
+  height: 250px;
+}
+
+footer .icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons span {
+  font-size: small;
+  margin-inline: 10px;
+}
+
+.icons i {
+  color: white;
+}
+
+@media screen and (max-width: 550px) {
+  .contact-img-cont {
+    height: 130px;
+    width: 130px;
+    padding: none;
+    margin: none;
+  }
+
+  .footer-img {
+    height: 160px;
+    width: 160px;
+  }
+
+  footer .name {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .footer-two {
+    /* background-color: red !important; */
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact-img-cont {
+    height: 120px;
+    width: 120px;
+  }
+
+  footer {
+    padding-inline: 10px !important;
+  }
+
+  .footer-two {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* styles for screens smaller than 800px */
+  .mission > div {
+    flex-direction: column;
+  }
+
+  #also img {
+    height: 360px;
+  }
+
+  footer {
+    padding-inline: 20px;
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+
+  footer div:nth-child(2) {
+    padding: none;
+  }
+
+  .img-container {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+#phone {
+  color: rgb(149, 149, 255) !important;
+  text-decoration: underline;
+}
