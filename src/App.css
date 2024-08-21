@@ -33,6 +33,25 @@ body {
 .site-link:hover {
   color: rgb(121, 194, 254);
 }
+.selar-link:hover {
+  color: rgb(121, 194, 254);
+}
+
+.selar-link {
+  background: #00000035;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  position: fixed;
+  bottom: 0px;
+  left: 205px;
+  z-index: 99;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
 
 .logo {
   position: fixed;
