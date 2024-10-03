@@ -95,10 +95,12 @@ const GetBook = () => {
           rel="noreferrer"
         >
           Click here to order from Amazon
-          {/* <i className="fa fa-1x fa-share-square-o"></i> */}
-          {/* <span class="fa-stack fa-sm"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-share-square-o fa-stack-1x"></i></span> */}
-          {/* <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-share-square-o fa-stack-1x "></i></span> */}
           <i className="fa fa-1x fa-share-square-o"></i>
+        </a>
+        <p>Alternatively</p>
+        <a href="https://selar.co/s626v7" target="blank" className="selar-link">
+          Get it from Selar.co
+          {/* <i className="fa fa-1x fa-share-square-o"></i> */}
         </a>
       </div>
       <hr></hr>

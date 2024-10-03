@@ -28,17 +28,15 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
         () => {
           setLoading(false);
           console.log("SUCCESS!");
+          toast("Success!");
           //   toast("Sent Successfully!!!");
-          setIsOpen(false);
 
           setEmail("");
           setNumber("");
           setName("");
           setMessage("");
-          toast("Success!");
         },
         (error) => {
-          setLoading(false);
           //   toast("Something went wrong! Try again later");
           console.log("FAILED...", error.text);
           toast("Error!");

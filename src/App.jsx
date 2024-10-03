@@ -47,9 +47,7 @@ function App() {
       <a href="http://anneswellnesshabour.com" className="site-link">
         anneswellnesshabour.com
       </a>
-      <a href="https://selar.co/s626v7" target="blank" className="selar-link">
-        selar.co
-      </a>
+
       <img
         src={logoImg}
         alt="logo"
@@ -276,7 +274,7 @@ function App() {
       <hr />
 
       {/* <ContactUs /> */}
-      <ContactForm isOpen={true} setIsOpen={false} />
+      <ContactForm />
 
       <Testimonials />
 
