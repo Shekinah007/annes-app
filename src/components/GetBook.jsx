@@ -3,6 +3,8 @@ import "./getbook.css";
 
 import { PaystackButton } from "react-paystack";
 import bookImg from "../images/book-cover.jpg";
+import frontImg from "../images/front-cover.jpg";
+import backImg from "../images/back-cover.jpg";
 
 const GetBook = () => {
   const publicKey = "pk_test_eb2e4ea24c9ae7e77dc4055679e1e6ee94a2f8de";
@@ -27,11 +29,15 @@ const GetBook = () => {
   return (
     <div id="get-book" className="section get-book ">
       <div>
-        <img src={bookImg} alt="book" />
+        <div className="book-container">
+          <img src={frontImg} alt="book" />
+          <img src={backImg} alt="book" />
+        </div>
         <div className="item">
           {/* <p className='title'>Conquering Depression And Living Happily</p> */}
-          <p className="price">N3000</p>
+          {/* <p className="price">N3000</p> */}
         </div>
+        <p className="price-alt">N3000</p>
         <p className="pick-up">Payment:</p>
         {/* <p>Access Bank: <span className="color">0006688978</span></p>
                 <p>Account Name:<span className="color"> Anne Igah</span></p>
