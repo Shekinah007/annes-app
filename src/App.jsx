@@ -8,6 +8,8 @@ import logoImg from "./images/awhlogo.jpg";
 
 import Menu from "./components/Menu";
 import GetBook from "./components/GetBook";
+import { ContactUs } from "./Contact";
+import { ContactForm } from "./ContactForm";
 
 function App() {
   function buyBook() {
@@ -270,6 +272,9 @@ function App() {
         </div>
       </div>
       <hr />
+
+      {/* <ContactUs /> */}
+      <ContactForm isOpen={true} setIsOpen={false} />
 
       <footer id="contact">
         <div className="contact-img-cont">
