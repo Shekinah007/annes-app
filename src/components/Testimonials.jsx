@@ -1,7 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./testimonials.css";
 
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import {
+  Autoplay,
+  Pagination,
+  Navigation,
+  EffectCoverflow,
+  EffectCards,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -14,16 +20,27 @@ export const Testimonials = () => {
       <h3>Testimonials</h3>
       <Swiper
         // navigation
-        pagination={{ clickable: true }}
+
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, Pagination, Navigation]}
+        // coverflowEffect={{
+        //   rotate: 50,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 1,
+        //   slideShadows: true,
+        // }}
+        modules={[Autoplay, Pagination, Navigation, EffectCards]}
         spaceBetween={50}
-        slidesPerView={1}
-        // onSlideChange={() => console.log("slide change")}
-        // onSwiper={(swiper) => console.log(swiper)}
+        slidesPerView={"auto"}
+        centeredSlides={true}
+        effect={"cards"}
+        grabCursor={true}
+        pagination={{
+          clickable: true,
+        }}
         className="swipper-container"
       >
         <SwiperSlide className="swiper-item">

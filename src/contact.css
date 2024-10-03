@@ -12,6 +12,8 @@
   align-self: center;
   justify-self: center;
   padding-block: 100px;
+  background: white;
+  color: black;
 }
 
 .get {
@@ -31,6 +33,7 @@ input {
   padding: 10px;
   border: none;
   outline: none;
+  box-shadow: -3px 1px 9px 0px #d1d1d1;
 }
 
 form {
@@ -83,6 +86,7 @@ textarea {
   border-radius: 10px;
   border: none;
   outline: none;
+  box-shadow: -3px 1px 9px 0px #d1d1d1;
 }
 
 @media only screen and (max-width: 700px) {

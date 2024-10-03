@@ -3,9 +3,22 @@
   color: gray;
   padding-inline: 30px;
   padding-block: 100px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+
+  background: linear-gradient(
+      45deg,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 26%,
+      transparent 26%
+    ),
+    linear-gradient(
+      45deg,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 27%,
+      transparent 27%
+    );
 }
 
 .swipper-container p {
@@ -13,11 +26,13 @@
 }
 
 .swiper-item {
-  box-shadow: -3px 1px 9px 0px #d1d1d1;
+  box-shadow: -3px 1px 9px 0px #4b4b4b;
+  background: white;
   padding: 20px;
   border-radius: 20px;
   transition: 0.5s;
   align-self: center;
+  max-width: 400px;
   /* max-width: 300px; */
   /* margin-inline: 200px; */
 }
@@ -55,4 +70,6 @@
 
 .testimonials h3 {
   text-align: center;
+  margin-top: 50px;
+  font-size: 26px;
 }
