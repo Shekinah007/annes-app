@@ -1,0 +1,54 @@
+.swipper-container {
+  background: white;
+  color: gray;
+  padding-inline: 30px;
+  padding-block: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipper-container p {
+  font-size: 14px;
+}
+
+.swiper-item {
+  box-shadow: -3px 1px 9px 0px #d1d1d1;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+  align-self: center;
+  /* max-width: 300px; */
+  /* margin-inline: 200px; */
+}
+
+.swiper-item:hover {
+  box-shadow: -3px 1px 15px 0px #5a5a5a;
+  cursor: pointer;
+}
+
+.name {
+  color: orange;
+  font-weight: semibold;
+  font-size: 40px;
+  margin-bottom: 5px;
+  /* background-color: blue; */
+  /* align-self: center;
+  justify-self: center; */
+}
+
+.swiper-item p {
+  font-size: 12px;
+}
+
+.name-container {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+
+  /* background-color: red; */
+}
+
+.testimonials h3 {
+  text-align: center;
+}

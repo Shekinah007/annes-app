@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import "animate.css";
+import "swiper/css";
 
 import headImage from "./images/AnneIgah.jpg";
 import footerImg from "./images/anne3.jpg";
@@ -10,6 +11,7 @@ import Menu from "./components/Menu";
 import GetBook from "./components/GetBook";
 import { ContactUs } from "./Contact";
 import { ContactForm } from "./ContactForm";
+import Testimonials from "./components/testimonials";
 
 function App() {
   function buyBook() {
@@ -275,6 +277,8 @@ function App() {
 
       {/* <ContactUs /> */}
       <ContactForm isOpen={true} setIsOpen={false} />
+
+      <Testimonials />
 
       <footer id="contact">
         <div className="contact-img-cont">

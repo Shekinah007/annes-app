@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { toast } from "sonner";
 // import { ToastContainer, toast } from "react-toastify";
 
 export const ContactForm = ({ isOpen, setIsOpen }) => {
@@ -34,18 +35,22 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
           setNumber("");
           setName("");
           setMessage("");
+          toast("Success!");
         },
         (error) => {
           setLoading(false);
           //   toast("Something went wrong! Try again later");
           console.log("FAILED...", error.text);
+          toast("Error!");
         }
       );
   };
 
   return (
-    <div id="contact" className={`constainer top-container`}>
-      <h3 className="get">Get in touch with me 👇</h3>
+    <div id="contact" className={`top-container`}>
+      <h3 className="get" onClick={() => toast("hello world")}>
+        Get in touch with me 👇
+      </h3>
       {/* <hr /> */}
       <form ref={form} onSubmit={(e) => sendEmail(e)} className="contact-form">
         <div className="form-a">
@@ -58,6 +63,7 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="text-black outline-none p-2 rounded-sm"
+                required
               />
             </div>
             <div className="input-container">
@@ -79,7 +85,7 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
                 value={number}
                 onChange={(e) => setNumber(e.target.value)}
                 className="text-black outline-none p-2 rounded-sm"
-                required
+                // required
               />
             </div>
           </div>
