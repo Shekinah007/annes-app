@@ -25,18 +25,24 @@ export const Testimonials = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        // coverflowEffect={{
-        //   rotate: 50,
-        //   stretch: 0,
-        //   depth: 100,
-        //   modifier: 1,
-        //   slideShadows: true,
-        // }}
-        modules={[Autoplay, Pagination, Navigation, EffectCards]}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        modules={[
+          Autoplay,
+          Pagination,
+          Navigation,
+          EffectCards,
+          EffectCoverflow,
+        ]}
         spaceBetween={50}
         slidesPerView={"auto"}
         centeredSlides={true}
-        effect={"cards"}
+        effect={"coverflow"}
         grabCursor={true}
         pagination={{
           clickable: true,
