@@ -37,7 +37,8 @@ const GetBook = () => {
           {/* <p className='title'>Conquering Depression And Living Happily</p> */}
           {/* <p className="price">N3000</p> */}
         </div>
-        <p className="price-alt">N3000</p>
+        <p className="price-alt">₦3,000</p>
+
         <p className="pick-up">Payment:</p>
         {/* <p>Access Bank: <span className="color">0006688978</span></p>
                 <p>Account Name:<span className="color"> Anne Igah</span></p>

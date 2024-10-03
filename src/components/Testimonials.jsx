@@ -7,9 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import { CircleUserRound } from "lucide-react";
 
-const Testimonials = () => {
+export const Testimonials = () => {
   return (
     <div className="testimonials">
       <h3>Testimonials</h3>
@@ -99,5 +98,3 @@ const Testimonials = () => {
 // Excellent book to help understand and overcome depression
 // Reviewed in the United Kingdom on 14 November 2023
 // The book has everything that one need to get insight of what depression feels like and to know the symptoms, what to do, how to overcome it. Great book 👏👏👏
-
-export default Testimonials;

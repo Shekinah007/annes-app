@@ -9,9 +9,9 @@ import logoImg from "./images/awhlogo.jpg";
 
 import Menu from "./components/Menu";
 import GetBook from "./components/GetBook";
-import { ContactUs } from "./Contact";
 import { ContactForm } from "./ContactForm";
-import Testimonials from "./components/testimonials";
+import { Testimonials } from "./components/Testimonials";
+// import Testimonials from "./components/testimonials";
 
 function App() {
   function buyBook() {
