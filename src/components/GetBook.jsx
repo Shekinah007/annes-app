@@ -106,7 +106,7 @@ const GetBook = () => {
         </a>
         <p>Alternatively</p>
         <a href="https://selar.co/s626v7" target="blank" className="selar-link">
-          Get it from Selar.co
+          Buy or Order from Selar.co
           {/* <i className="fa fa-1x fa-share-square-o"></i> */}
         </a>
       </div>

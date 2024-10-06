@@ -22,7 +22,7 @@ export const Testimonials = () => {
         // navigation
 
         autoplay={{
-          delay: 2500,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         coverflowEffect={{
@@ -92,11 +92,11 @@ export const Testimonials = () => {
             <p className="name">Obehi</p>
           </div>
           <p className="comment">
-            5.0 out of 5 stars // Excellent book to help understand and overcome
-            depression // Reviewed in the United Kingdom on 14 November 2023 //
-            The book has everything that one need to get insight of what
-            depression feels like and to know the symptoms, what to do, how to
-            overcome it. Great book 👏👏👏
+            5.0 out of 5 stars. Excellent book to help understand and overcome
+            depression. Reviewed in the United Kingdom on 14 November 2023. The
+            book has everything that one need to get insight of what depression
+            feels like and to know the symptoms, what to do, how to overcome it.
+            Great book 👏👏👏
           </p>
         </SwiperSlide>
       </Swiper>

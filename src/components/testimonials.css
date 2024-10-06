@@ -1,5 +1,4 @@
 .swipper-container {
-  background: white;
   color: gray;
   padding-inline: 30px;
   padding-block: 100px;
@@ -11,13 +10,13 @@
       45deg,
       rgb(255, 255, 255) 0%,
       rgb(255, 255, 255) 26%,
-      transparent 26%
+      transparent 0%
     ),
     linear-gradient(
       45deg,
       rgb(255, 255, 255) 0%,
       rgb(255, 255, 255) 27%,
-      transparent 27%
+      transparent 0%
     );
 }
 
@@ -53,7 +52,7 @@
 }
 
 .swiper-item p {
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .name-container {

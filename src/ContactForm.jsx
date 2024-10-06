@@ -46,9 +46,7 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
 
   return (
     <div id="contact" className={`top-container`}>
-      <h3 className="get" onClick={() => toast("hello world")}>
-        Get in touch with me 👇
-      </h3>
+      <h3 className="get">Get in touch with me 👇</h3>
       {/* <hr /> */}
       <form ref={form} onSubmit={(e) => sendEmail(e)} className="contact-form">
         <div className="form-a">
