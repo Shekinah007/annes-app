@@ -14,6 +14,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
+import obehiImg from "../images/obehi.jpg";
+import jojoImg from "../images/jojo.jpg";
+import hutytechImg from "../images/hutytech.jpg";
+import preciousImg from "../images/precious.jpg";
+
 export const Testimonials = () => {
   return (
     <div className="testimonials">
@@ -51,7 +56,11 @@ export const Testimonials = () => {
       >
         <SwiperSlide className="swiper-item">
           <div className="name-container">
-            {/* <CircleUserRound /> */}
+            <img
+              className="testimonial-img"
+              src={jojoImg}
+              alt="tesimonial image"
+            />
             <p className="name">Josephine William</p>
           </div>
           <p className="comment">
@@ -62,7 +71,11 @@ export const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="swiper-item">
           <div className="name-container">
-            {/* <CircleUserRound /> */}
+            <img
+              className="testimonial-img"
+              src={preciousImg}
+              alt="tesimonial image"
+            />
             <p className="name"> Precious Okundaye</p>
           </div>
           <p className="comment">
@@ -78,7 +91,11 @@ export const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="swiper-item">
           <div className="name-container">
-            {/* <CircleUserRound /> */}
+            <img
+              className="testimonial-img"
+              src={hutytechImg}
+              alt="tesimonial image"
+            />
             <p className="name"> Hutytech ICT Resources</p>
           </div>
           <p className="comment">
@@ -88,7 +105,11 @@ export const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="swiper-item">
           <div className="name-container">
-            {/* <CircleUserRound /> */}
+            <img
+              className="testimonial-img"
+              src={obehiImg}
+              alt="tesimonial image"
+            />
             <p className="name">Obehi</p>
           </div>
           <p className="comment">
