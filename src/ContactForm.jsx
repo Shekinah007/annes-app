@@ -24,7 +24,7 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
     setLoading(true);
     emailjs
       .sendForm("service_noivkl2", "template_l9mz9ir", form.current, {
-        publicKey: "n-moxVdFEthca5XTz",
+        publicKey: "GmoPu18cJVpdY2EOs",
         // .sendForm("service_ifhon1a", "template_r01a70s", form.current, {
         //   publicKey: "n-moxVdFEthca5XTz",
         // .sendForm("service_5cvkiwd", "template_r01a70s", form.current, {
@@ -33,7 +33,6 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
       .then(
         () => {
           setLoading(false);
-          console.log("SUCCESS!");
           toast("Success!");
           //   toast("Sent Successfully!!!");
 
@@ -45,7 +44,7 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
         (error) => {
           //   toast("Something went wrong! Try again later");
           console.log("FAILED...", error.text);
-          toast("Error!");
+          toast.error("Error! Check your network connection");
         }
       );
   };
