@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { toast } from "sonner";
+import { CircleLoader, FadeLoader, MoonLoader } from "react-spinners";
+import { Circles } from "react-loader-spinner";
 // import { ToastContainer, toast } from "react-toastify";
 
 export const ContactForm = ({ isOpen, setIsOpen }) => {
@@ -21,8 +23,12 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
 
     setLoading(true);
     emailjs
-      .sendForm("service_5cvkiwd", "template_r01a70s", form.current, {
+      .sendForm("service_noivkl2", "template_l9mz9ir", form.current, {
         publicKey: "n-moxVdFEthca5XTz",
+        // .sendForm("service_ifhon1a", "template_r01a70s", form.current, {
+        //   publicKey: "n-moxVdFEthca5XTz",
+        // .sendForm("service_5cvkiwd", "template_r01a70s", form.current, {
+        //   publicKey: "n-moxVdFEthca5XTz",
       })
       .then(
         () => {
@@ -98,8 +104,12 @@ export const ContactForm = ({ isOpen, setIsOpen }) => {
           </div>
         </div>
 
-        <button value={"Send"} className="send-btn">
-          {loading ? "Sending..." : "Send"}
+        <button value={"Send"} className="button-30">
+          {loading ? (
+            <Circles height="35" width="35" color="#4fa94d" />
+          ) : (
+            "Send"
+          )}
         </button>
       </form>
     </div>
