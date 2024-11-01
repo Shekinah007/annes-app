@@ -132,6 +132,17 @@ function App() {
             suffering from depression and anxiety disorder’s to obtain total
             wellness and find hope to win again.
           </p>
+
+          <br />
+
+          <h2>Our Vision</h2>
+          <hr />
+          <p>
+            Reintegrating the mentally challenged into a wellness and safe
+            habour to obtain total wellness and find hope to win again. To foser
+            a more informed, supportive and stigman feee environment within the
+            society.
+          </p>
         </div>
         <a
           href="#also"
