@@ -48,6 +48,7 @@ body {
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .logo {
@@ -181,8 +182,9 @@ header h1 {
   background-color: aliceblue;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 #about p {
@@ -225,12 +227,20 @@ header h1 {
   align-self: flex-end;
 }
 
+.mission {
+  /* display: flex;
+  flex-direction: column; */
+  /* gap: 50px;
+  padding-inline: 100px; */
+}
+
 .mission > div {
   text-align: left;
   color: rgb(179, 179, 179);
   gap: 10px;
   display: flex;
   flex-direction: row;
+  /* background-color: red; */
 }
 
 .caps {

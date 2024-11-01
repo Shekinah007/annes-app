@@ -3,18 +3,36 @@
   flex-direction: column;
   background-color: rgb(217, 217, 217);
   padding: 20px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
-.get-book > div:first-child {
+/* .get-book > div:first-child {
   position: relative;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+} */
+
+.book-sec {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-pri {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .item {
-  position: absolute;
+  /* position: absolute;
   top: -5px;
   font-weight: bold;
-  left: -5px;
+  left: -5px; */
 }
 
 .get-book .price {
@@ -43,7 +61,7 @@
 }
 
 .get-book img {
-  width: 300px;
+  width: 325px;
   /* max-width: 100%; */
 }
 

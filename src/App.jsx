@@ -113,6 +113,16 @@ function App() {
           <p>A Wellness and safe Habour for the mentally challenged.</p>
           <br />
 
+          <h2>Our Vision</h2>
+          <hr />
+          <p>
+            Reintegrating the mentally challenged into a wellness and safe
+            habour to obtain total wellness and find hope to win again. To foser
+            a more informed, supportive and stigman feee environment within the
+            society.
+          </p>
+        </div>
+        <div>
           <h2>About Anne</h2>
           <hr />
           <p>
@@ -131,17 +141,6 @@ function App() {
             health profession as inspired and directed by God. She wants those
             suffering from depression and anxiety disorder’s to obtain total
             wellness and find hope to win again.
-          </p>
-
-          <br />
-
-          <h2>Our Vision</h2>
-          <hr />
-          <p>
-            Reintegrating the mentally challenged into a wellness and safe
-            habour to obtain total wellness and find hope to win again. To foser
-            a more informed, supportive and stigman feee environment within the
-            society.
           </p>
         </div>
         <a
@@ -250,33 +249,33 @@ function App() {
           <hr />
           <p>
             <li>
-              1. To create annual enlightenment programme for 100 persons with
+              - To create annual enlightenment programme for 100 persons with
               mental health to access information that is adequate and
               appropriate for them to begin their healing journey.
             </li>
             <li>
-              2. To create early detection awareness programme for 200 persons
+              - To create early detection awareness programme for 200 persons
               with mental health to enable them reverse a spiral downturn.
             </li>
             <li>
-              3. To Provide counselling and therapeutic services for persons
-              with mental health challenges.
+              - To Provide counselling and therapeutic services for persons with
+              mental health challenges.
             </li>
             <li>
-              4. To provide relevant information, to guide others to prevent
+              - To provide relevant information, to guide others to prevent
               depression and those with depression to help them overcome
               depression.
             </li>
             <li>
-              5. To equip and reintegrate the depressed. Empower them to obtain
+              - To equip and reintegrate the depressed. Empower them to obtain
               total wellness and find hope again to win.
             </li>
             <li>
-              6. To Create public awareness and enlightenment advocating against
+              - To Create public awareness and enlightenment advocating against
               stigmatization of persons suffering from mental illness
             </li>
             <li>
-              7. To provide emotional support and conducive environment for
+              - To provide emotional support and conducive environment for
               therapeutic services and relaxation for persons with depression.
             </li>
           </p>
