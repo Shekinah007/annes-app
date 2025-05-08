@@ -161,14 +161,12 @@ function App() {
         </a>
       </div>
 
-      <div id="also" className="section">
-        <div className="img-container">
-          {/* <img src={aboutImg} alt="" id="section-img" className='section-img animate image'></img> */}
-        </div>
+      {/* <div id="also" className="section">
+        <div className="img-container"></div>
 
         <div className="animate text">
           <p>
-            She has a Book titled:{" "}
+            She has a Book titled:
             <a
               href="https://www.amazon.co.uk/dp/B0C9S5R3TQ?ref_=pe_3052080_397514860"
               target="_blank"
@@ -206,8 +204,8 @@ function App() {
 
         <br />
 
-        {/* <Book hanldeModal={buyBook} /> */}
-      </div>
+       
+      </div> */}
 
       <GetBook />
 
@@ -216,8 +214,8 @@ function App() {
           <h3>Vision:</h3>
           <hr />
           <p>
-            Reintegrating the mentally challenged to achieve total wellness,
-            lead transformed, fulfilling and productive lives.
+            Vision is to embrace transformation, live productive and fulfilled
+            lives.
           </p>
         </div>
         <div className="animate text">
@@ -270,8 +268,8 @@ function App() {
               adequate and appropriate for them to begin their healing journey.
             </li>
             <li>
-              2. To create early detection awareness programme for 200 persons
-              with mental health to enable them reverse a spiral downturn.
+              2. To create early detection awareness programme for persons with
+              mental health to enable them reverse a spiral downturn.
             </li>
             <li>
               3. To Provide counselling and therapeutic services for persons
